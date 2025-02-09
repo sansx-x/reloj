@@ -1,0 +1,68 @@
+*{
+margin: 0;
+padding: 0;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+body{
+	/*si no carga la imagen el fondo lo pondra de color negro*/
+	background: url(chcchch.jpeg) #000;
+	/*para que la imagen de fondo se ajuste al ancho de la pantalla del usuario*/
+	background-size: cover;
+	color: #fff;
+	font-size: 16px;
+	width: 80%;
+	height: 500px;
+}
+
+.wrap{
+	width: 90%;
+	max-width: 1000px;
+	/*si quisieramos centrar el reloj en pantalla*/
+	/*margin: auto;*/
+}
+
+.widget{
+	width: 40%;
+	/*lo siguiente equivale a decir margin: 32px;*/
+	margin: 2em;
+}
+
+.widget p{
+	display: inline-block;
+	line-height:1em;
+}
+
+.fecha{
+	font-family: Arial;
+	text-align: center;
+	font-size: 1.5em;
+	/*equivale a decir margin-bottom: 5px;*/
+	margin-bottom: 0.3125rem;
+	/*el olor negro tendra una transparencia en un nivel medio (.5)*/
+	background: rgba(0,0,0,.5);
+	padding: 20px;
+	width: 100%;
+}
+
+.reloj{
+	font-family: Arial;
+	text-align: center;
+	font-size: 4em;
+	background: rgba(0,0,0,.5);
+	padding: 20px;
+	width: 100%;
+}
+
+/*NOTA: estoy indicando que la class .caja-segundos esta contenida en la class .reloj, no que estoy aplicando estilo a ambos, si fuera aplicar el estilo a ambos se escribiera .reloj, .caja-segundos{ */
+.reloj .caja-segundos{
+	display: inline-block;
+}
+
+.reloj .segundos,
+.reloj .ampm{
+	font-size:2rem;
+	display: block;
+}
